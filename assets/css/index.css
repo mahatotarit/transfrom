@@ -1,0 +1,14 @@
+body{
+  background-color:#FEF9F4;
+}
+.success_input{
+  color:green;
+  background-color: rgb(200, 255, 200);
+}
+.error_input{
+  color:red;
+  background-color: rgb(255, 200, 200);
+}
+.d-none{
+  display:none;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Connect Example</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <div>
+        <b>Address:</b>
+        <span class="address"></span>
+    </div>
+    <br>
+    <button id="connectButton">Connect to MetaMask</button>
+
+    <br><br>
+    <div>
+        <h4>Set Provider</h4>
+        <input type="text" placeholder="Token Contract Address" class="set_provider_to_c_a">
+        <input type="button" value="Set Provider" class="set_provider_btn">
+        <br>
+        Token Address : <span class="token_address_span"></span>
+    </div>
+
+    <br><br>
+    <!-- approve token div -->
+    <div>
+      <div style="display: flex; align-items: center; justify-content: start;">
+        <h4>Approve Token</h4>
+        <img src="assets/imge/loading.gif" class="approve_loading d-none" height="30px" alt="">
+      </div>
+      Spender Address:
+      <input type="text" placeholder="Spender user Address" class="spender_address">
+      <input type="number" placeholder="Token Value" class="amount_value">
+      <input type="button" value="Approve" class="approve_token_btn">
+    </div>
+
+
+    <br><br>
+    <!-- allowance check  -->
+    <div>
+      <div style="display: flex; align-items: center; justify-content: start;">
+        <h4>Allowance Check</h4>
+        <img src="assets/imge/loading.gif" class="allwance_loading d-none" height="30px" alt="">
+      </div>
+
+      <div>
+        <div>
+            Owner:
+            <input type="text" placeholder="Owner Address" class="owner_add">
+            <input type="button" value="SetUserAdd" class="set_user_address_btn">
+        </div>
+        <br>    
+        <div>
+            Spender:
+            <input type="text" placeholder="Spender Address" class="spender_add">
+            <input type="button" value="SetUserAdd" class="set_user_address_btn">
+        </div>
+      </div>
+      <br>
+      <div>
+        <button class="allwance_check_btn">Check</button>
+        <span class="allwaonce_value"></span>
+      </div>
+    </div>
+
+    <br><br>
+    <div>
+        <div style="display: flex; align-items: center; justify-content: start;">
+            <h4>TransferFrom Token</h4>
+            <img src="assets/imge/loading.gif" class="sending_loading d-none" height="30px" alt="">
+        </div>
+
+        sending address :<input type="text" placeholder="From address" class="send_amount_from_add">
+        sending address :<input type="text" placeholder="To address" class="send_amount_add">
+        <input type="button" value="Send" class="send_amount_btn">
+    </div>
+
+</body>
+</html>
+
+<script src="main.js"></script>
